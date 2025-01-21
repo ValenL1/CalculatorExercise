@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(153, 197, 218);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+#calculator {
+    background: linear-gradient(180deg, rgb(164, 211, 167) 0%, rgb(164, 187, 181) 100%);
+    flex: 1 0;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 35px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 10px 10px 10px -5px rgb(0, 0, 0);
+    border-bottom: solid rgb(125, 143, 138) 5px;
+    border-left: solid rgb(125, 143, 138) 2px;
+    border-top: solid rgb(70, 130, 113) 10px;
+    gap: 15px;
+}
+
+#historycontainer {
+    display: flex;
+    flex: 1 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 100px;
+}
+
+#bar {
+    width: 50px;
+    border-radius: 0 35px 20px 0px;
+    box-shadow: 3px 5px 7px -0.8px rgb(0, 0, 0);
+    border-bottom: solid rgb(125, 143, 138) 5px;
+    border-left: none;
+    background: linear-gradient(180deg, rgb(164, 211, 167) 0%, rgb(164, 187, 181) 100%);
+    border-right: none;
+    border-top: solid rgb(70, 130, 113) 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+  width: 730px;
+  height: 210px;
+  background: linear-gradient(180deg, rgb(51, 51, 51) 0%, rgb(15, 15, 15) 100%);
+  border-radius: 10px;
+  border: solid rgb(143, 143, 143) 2px;
+  box-shadow: 0 2px 0 rgb(143, 143, 143), 0 6px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+#operation {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#number1,
+#operator,
+#result,
+#number2 {
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 57px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+#result {
+    flex: 1 0;
+}
+
+#systembuttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 730px;
+    gap: 109px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barbutton {
+    background: linear-gradient(180deg, rgb(187, 187, 187) 0%, rgb(157, 164, 162) 100%);
+    width: 30px;
+    height: 500px;
+    border-radius: 10px;
+    border: solid rgb(143, 143, 143) 2px;
+    box-shadow: 0 2px 0 rgb(143, 143, 143), 0 6px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barbutton p {
+    transform: rotate(90deg);
+    white-space: nowrap;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 20px;
+    background: linear-gradient(to right, #a2a2a2, #777);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.systembtn {
+  border-radius: 10px;
+  border: solid rgb(143, 143, 143) 2px;
+  box-shadow: 0 2px 0 rgb(143, 143, 143), 0 6px 0 rgba(0, 0, 0, 0.1);
+  height: 35px;
+  width: 159px;
+  background: linear-gradient(180deg, rgb(187, 187, 187) 0%, rgb(157, 164, 162) 100%);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.systembtn p {
+    font-size: 20px;
+    font-weight: bold;
+    color: RGB(176, 132, 132);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#keyboard {
+    display: flex;
+}
+
+#digits {
+    display: flex;
+    flex-wrap: wrap;
+    width: 522px;
+    height: 275px;
+    gap: 8px;
+}
+
+#operatorsbtns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.digit {  
+    border-radius: 10px;
+    border: solid rgb(143, 143, 143) 2px;
+    box-shadow: 0 2px 0 rgb(143, 143, 143), 0 6px 0 rgba(0, 0, 0, 0.1);
+    height: 53px;
+    width: 159px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(187, 187, 187) 0%, rgb(157, 164, 162) 100%);
+}
+
+.digit p {
+    font-size: 20px;
+    font-weight: bold;
+    color: RGB(142, 142, 142);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.opdigit {  
+    border-radius: 10px;
+    border: solid rgb(143, 143, 143) 2px;
+    box-shadow: 0 2px 0 rgb(143, 143, 143), 0 6px 0 rgba(0, 0, 0, 0.1);
+    height: 53px;
+    width: 159px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(187, 187, 187) 0%, rgb(157, 164, 162) 100%);
+}
+
+.opdigit p {
+  font-size: 34px;
+  font-weight: bold;
+  color: RGB(122, 140, 174);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
